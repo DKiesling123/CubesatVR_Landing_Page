@@ -37,8 +37,9 @@ contactForm.addEventListener("submit", (e) => {
     return;
   }
 
-  // Here you could implement real form submission logic (AJAX, fetch, etc.)
+  // Here you can implement real form submission logic (AJAX, fetch, etc.)
   alert(`Thank you, ${name}! Your message has been received. We'll respond soon.`);
   contactForm.reset();
 });
+
 
