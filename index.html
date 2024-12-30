@@ -1,40 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CubeSatVR</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="CubeSat VR Program - Official Website" />
+  <meta name="keywords" content="CubeSat, VR, Space, Satellite, Technology" />
+  <meta name="author" content="Your Company" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CubeSat VR Program</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to CubeSatVR</h1>
-    <p>Revolutionizing Space Education in Virtual Reality</p>
-    <button onclick="window.scrollTo(0, document.body.scrollHeight)">Learn More</button>
-  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">CubeSat VR</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">What is the Program?</a></li>
+      <li><a href="#features">What Can It Do?</a></li>
+      <li><a href="#why">Why We Need It</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
 
-  <main>
-    <section>
-      <h2>Explore Space Like Never Before</h2>
-      <video controls>
-        <source src="your-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-    <section>
-      <h2>Why CubeSatVR?</h2>
+  <!-- Hero Section with Background Video -->
+  <section id="hero" class="hero-section">
+    <!-- Replace 'assets/cubesat.mp4' with your actual video file or a hosted URL -->
+    <video autoplay muted loop playsinline id="heroVideo" class="hero-video">
+      <source src="assets/cubesat.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to CubeSat VR</h1>
+      <p>Revolutionizing space exploration through virtual reality</p>
+      <button onclick="scrollToSection('about')">Learn More</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="content-section">
+    <h2>What is the CubeSat VR Program?</h2>
+    <p>
+      The CubeSat VR Program is a cutting-edge initiative that combines the
+      power of miniature satellites (CubeSats) with virtual reality technology.
+      Our goal is to provide unprecedented access to space data and immersive
+      simulations that can be explored by engineers, researchers, and
+      enthusiasts alike.
+    </p>
+    <p>
+      By leveraging VR, we aim to visualize real-time telemetry and global
+      positioning in an interactive 3D environment. This allows users to
+      understand satellite orbits, experiment with mission planning, and
+      collaborate on important research projects without leaving the ground.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="content-section alt-bg">
+    <h2>What Can CubeSat VR Do?</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Real-Time Simulation</h3>
+        <p>
+          Experience your CubeSat’s orbit and positioning in real time through
+          an immersive VR environment, with accurate tracking and live data
+          feeds.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h3>Mission Planning</h3>
+        <p>
+          Plan, design, and test missions using interactive 3D models and data
+          visualization tools, making space exploration accessible and
+          intuitive.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h3>Training & Education</h3>
+        <p>
+          Use our VR platform for student training and public outreach. From
+          middle schools to universities, CubeSat VR simplifies complex orbital
+          mechanics into engaging lessons.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h3>Collaboration Tools</h3>
+        <p>
+          Collaborate with team members worldwide through shared VR sessions,
+          enabling real-time communication, data sharing, and problem-solving
+          across continents.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why We Need It Section -->
+  <section id="why" class="content-section">
+    <h2>Why Do We Need CubeSat VR?</h2>
+    <div class="why-content">
+      <p>
+        As space missions become increasingly complex and critical to advancing
+        human knowledge, it is vital to have tools that empower efficient
+        design, testing, and monitoring. CubeSat VR addresses these needs by:
+      </p>
       <ul>
-        <li>Immersive Space Missions</li>
-        <li>Solve Real Engineering Challenges</li>
-        <li>Empower Future Innovators</li>
+        <li>Reducing costs through virtual simulations and prototyping.</li>
+        <li>
+          Improving data comprehension via interactive 3D visualizations and
+          intuitive interfaces.
+        </li>
+        <li>
+          Facilitating collaboration for globally distributed teams, bridging
+          research gaps.
+        </li>
+        <li>
+          Inspiring the next generation of scientists, engineers, and explorers.
+        </li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>Ready to launch your learning?</p>
-    <button>Get Started Now</button>
+  <!-- Contact Section -->
+  <section id="contact" class="content-section alt-bg">
+    <h2>Contact Us</h2>
+    <p>
+      Interested in learning more about the CubeSat VR Program? Reach out to us
+      for partnerships, demos, or any questions you might have.
+    </p>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 CubeSat VR Program. All rights reserved.</p>
   </footer>
+
+  <!-- Link to the external JS file -->
+  <script src="script.js"></script>
 </body>
 </html>
+
 
