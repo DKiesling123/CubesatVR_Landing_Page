@@ -1,188 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="CubeSat VR Program - Official Website" />
-  <meta name="keywords" content="CubeSat, VR, Space, Satellite, Technology" />
-  <meta name="author" content="Your Company" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CubeSat VR Program</title>
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
-  <!-- Link to the external CSS file -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">CubeSat VR</div>
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="CubeSat VR Program - Official Website" />
+    <meta name="keywords" content="CubeSat, VR, Space, Satellite, Technology" />
+    <meta name="author" content="Your Company" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CubeSat VR</title>
+
+    <!-- Apple-Like Fonts: System Fonts for a Crisp Look -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">CubeSat VR</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">What is the Program?</a></li>
+          <li><a href="#features">What Can It Do?</a></li>
+          <li><a href="#why">Why We Need It</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">What is the Program?</a></li>
-        <li><a href="#features">What Can It Do?</a></li>
-        <li><a href="#why">Why We Need It</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section with Background Video -->
-  <section id="hero" class="hero-section">
-    <!-- Replace 'assets/cubesat.mp4' with your actual video file or hosted URL -->
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      id="heroVideo"
-      class="hero-video"
-      poster="assets/hero-placeholder.jpg"
-    >
-      <source src="assets/cubesat.mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Welcome to CubeSat VR</h1>
-      <p>Revolutionizing space exploration through virtual reality</p>
-      <button onclick="scrollToSection('about')" class="btn-cta">Learn More</button>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="content-section">
-    <div class="section-container">
-      <h2>What is the CubeSat VR Program?</h2>
-      <p>
-        The CubeSat VR Program is a cutting-edge initiative that combines the
-        power of miniature satellites (CubeSats) with virtual reality technology.
-        Our goal is to provide unprecedented access to space data and immersive
-        simulations that can be explored by engineers, researchers, and
-        enthusiasts alike.
-      </p>
-      <p>
-        By leveraging VR, we aim to visualize real-time telemetry and global
-        positioning in an interactive 3D environment. This allows users to
-        understand satellite orbits, experiment with mission planning, and
-        collaborate on important research projects—without ever leaving the
-        ground.
-      </p>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="content-section alt-bg">
-    <div class="section-container">
-      <h2>What Can CubeSat VR Do?</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h3>Real-Time Simulation</h3>
-          <p>
-            Experience your CubeSat’s orbit and positioning in real time within
-            an immersive VR environment, enhanced by accurate tracking and live
-            data feeds.
-          </p>
-        </div>
-        <div class="feature-item">
-          <h3>Mission Planning</h3>
-          <p>
-            Plan, design, and test missions using interactive 3D models and data
-            visualization tools—making space exploration accessible and intuitive.
-          </p>
-        </div>
-        <div class="feature-item">
-          <h3>Training &amp; Education</h3>
-          <p>
-            Use our VR platform for student training and public outreach—from
-            middle schools to universities—to simplify complex orbital mechanics
-            into engaging lessons.
-          </p>
-        </div>
-        <div class="feature-item">
-          <h3>Collaboration Tools</h3>
-          <p>
-            Collaborate with global team members through shared VR sessions,
-            enabling real-time communication, data sharing, and
-            problem-solving across continents.
-          </p>
-        </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">CubeSat VR</h1>
+        <p class="hero-subtitle">Revolutionizing Space Exploration</p>
+        <button class="hero-cta" onclick="scrollToSection('about')">
+          Learn More
+        </button>
       </div>
-    </div>
-  </section>
+      <!-- Replace with an appropriate high-res image/video that fits your product or brand -->
+      <!-- Example: <img src="assets/hero-image.jpg" alt="CubeSat VR" class="hero-image" /> -->
+    </section>
 
-  <!-- Why We Need It Section -->
-  <section id="why" class="content-section">
-    <div class="section-container">
-      <h2>Why Do We Need CubeSat VR?</h2>
-      <p>
-        As space missions become increasingly complex and critical to advancing
-        human knowledge, it's crucial to have tools that empower efficient
-        design, testing, and monitoring. CubeSat VR addresses these needs by:
-      </p>
-      <ul>
-        <li>Reducing costs through virtual simulations and prototyping.</li>
-        <li>
-          Improving data comprehension via interactive 3D visualizations and
-          intuitive interfaces.
-        </li>
-        <li>
-          Facilitating collaboration for globally distributed teams, bridging
-          research gaps.
-        </li>
-        <li>
-          Inspiring the next generation of scientists, engineers, and explorers.
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <div class="section-inner">
+        <h2>What is the CubeSat VR Program?</h2>
+        <p>
+          The <strong>CubeSat VR Program</strong> is a cutting-edge initiative
+          that combines the power of miniature satellites (CubeSats) with virtual
+          reality technology. Our goal is to bring space data to life—empowering
+          engineers, researchers, and enthusiasts with immersive insights into
+          orbits, trajectories, and onboard systems.
+        </p>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="content-section alt-bg">
-    <div class="section-container">
-      <h2>Contact Us</h2>
-      <p>
-        Interested in learning more about the CubeSat VR Program? Reach out to us
-        for partnerships, demos, or any questions you might have.
-      </p>
-      <form class="contact-form">
-        <div class="form-row">
-          <div class="form-column">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+    <!-- Features Section -->
+    <section id="features" class="content-section alt-bg">
+      <div class="section-inner features-wrapper">
+        <h2>What Can It Do?</h2>
+        <div class="features-cards">
+          <div class="feature-card">
+            <h3>Real-Time Simulation</h3>
+            <p>
+              Experience your CubeSat’s orbit and positioning in real time using
+              our immersive VR environment, complete with accurate tracking and
+              live data feeds.
+            </p>
           </div>
-          <div class="form-column">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+          <div class="feature-card">
+            <h3>Mission Planning</h3>
+            <p>
+              Easily plan, design, and test missions using interactive 3D models
+              and data visualization tools, helping you prototype your vision
+              before ever leaving Earth.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Training &amp; Education</h3>
+            <p>
+              Engage students, scientists, and the public with simplified orbital
+              mechanics lessons in VR. Perfect for classrooms and outreach events.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Collaboration Tools</h3>
+            <p>
+              Work seamlessly with teams around the world in real-time shared VR
+              sessions. Share data, brainstorm ideas, and troubleshoot from any
+              location.
+            </p>
           </div>
         </div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-        <button type="submit" class="btn-cta">Submit</button>
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
+    <!-- Why We Need It Section -->
+    <section id="why" class="content-section">
+      <div class="section-inner">
+        <h2>Why We Need CubeSat VR</h2>
+        <p>
+          Space missions are increasingly complex. By harnessing VR for mission
+          planning, data visualization, and education, the CubeSat VR Program
+          aims to advance human knowledge while saving resources and engaging the
+          next generation of scientists.
+        </p>
+        <ul>
+          <li>Cut costs through virtual testing &amp; prototyping</li>
+          <li>Visualize orbital data for efficient mission design</li>
+          <li>
+            Collaborate remotely with international partners in a shared VR
+            workspace
+          </li>
+          <li>Inspire the innovators of tomorrow</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section alt-bg">
+      <div class="section-inner">
+        <h2>Contact Us</h2>
+        <p>
+          Ready to learn more about the CubeSat VR Program? Let’s talk. Whether
+          you have questions, partnership ideas, or simply want to see a demo,
+          we’re here to help.
+        </p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
       <p>&copy; 2024 CubeSat VR Program. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Link to the external JS file -->
-  <script src="script.js"></script>
-</body>
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
+
 
 
 
