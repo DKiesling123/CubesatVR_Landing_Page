@@ -2,160 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="CubeSat VR Program - Official Website" />
-    <meta name="keywords" content="CubeSat, VR, Space, Satellite, Technology" />
-    <meta name="author" content="Your Company" />
+    <title>Cubesat VR STUDIO</title>
+    <link href="styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CubeSat VR</title>
-
-    <!-- Apple-Like Fonts: System Fonts for a Crisp Look -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    <meta
+      name="description"
+      content="Cubesat VR STUDIO - The future of virtual reality experiences"
     />
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <meta name="keywords" content="Cubesat, VR, Studio" />
+    <meta name="author" content="Your Name Here" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-16x16.png"
+    />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">CubeSat VR</div>
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">What is the Program?</a></li>
-          <li><a href="#features">What Can It Do?</a></li>
-          <li><a href="#why">Why We Need It</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Starry Background -->
+    <div class="titan-background">
+      <span class="stars stars-L"></span>
+      <span class="stars stars-M"></span>
+      <span class="stars stars-S"></span>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title">CubeSat VR</h1>
-        <p class="hero-subtitle">Revolutionizing Space Exploration</p>
-        <button class="hero-cta" onclick="scrollToSection('about')">
-          Learn More
-        </button>
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Cubesat VR STUDIO</h1>
       </div>
-      <!-- Replace with an appropriate high-res image/video that fits your product or brand -->
-      <!-- Example: <img src="assets/hero-image.jpg" alt="CubeSat VR" class="hero-image" /> -->
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="content-section">
-      <div class="section-inner">
-        <h2>What is the CubeSat VR Program?</h2>
+      <!-- Video Placeholder (Black screen with white glow) -->
+      <div class="video-placeholder">
+        <p>Video Placeholder</p>
+      </div>
+
+      <!-- Purpose/Description Section -->
+      <div class="purpose">
         <p>
-          The <strong>CubeSat VR Program</strong> is a cutting-edge initiative
-          that combines the power of miniature satellites (CubeSats) with virtual
-          reality technology. Our goal is to bring space data to life—empowering
-          engineers, researchers, and enthusiasts with immersive insights into
-          orbits, trajectories, and onboard systems.
+          Here is where you can describe the goals and capabilities of your
+          VR studio. Share your mission, vision, or any other important details.
         </p>
       </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="content-section alt-bg">
-      <div class="section-inner features-wrapper">
-        <h2>What Can It Do?</h2>
-        <div class="features-cards">
-          <div class="feature-card">
-            <h3>Real-Time Simulation</h3>
-            <p>
-              Experience your CubeSat’s orbit and positioning in real time using
-              our immersive VR environment, complete with accurate tracking and
-              live data feeds.
-            </p>
-          </div>
-          <div class="feature-card">
-            <h3>Mission Planning</h3>
-            <p>
-              Easily plan, design, and test missions using interactive 3D models
-              and data visualization tools, helping you prototype your vision
-              before ever leaving Earth.
-            </p>
-          </div>
-          <div class="feature-card">
-            <h3>Training &amp; Education</h3>
-            <p>
-              Engage students, scientists, and the public with simplified orbital
-              mechanics lessons in VR. Perfect for classrooms and outreach events.
-            </p>
-          </div>
-          <div class="feature-card">
-            <h3>Collaboration Tools</h3>
-            <p>
-              Work seamlessly with teams around the world in real-time shared VR
-              sessions. Share data, brainstorm ideas, and troubleshoot from any
-              location.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why We Need It Section -->
-    <section id="why" class="content-section">
-      <div class="section-inner">
-        <h2>Why We Need CubeSat VR</h2>
-        <p>
-          Space missions are increasingly complex. By harnessing VR for mission
-          planning, data visualization, and education, the CubeSat VR Program
-          aims to advance human knowledge while saving resources and engaging the
-          next generation of scientists.
-        </p>
-        <ul>
-          <li>Cut costs through virtual testing &amp; prototyping</li>
-          <li>Visualize orbital data for efficient mission design</li>
-          <li>
-            Collaborate remotely with international partners in a shared VR
-            workspace
-          </li>
-          <li>Inspire the innovators of tomorrow</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section alt-bg">
-      <div class="section-inner">
-        <h2>Contact Us</h2>
-        <p>
-          Ready to learn more about the CubeSat VR Program? Let’s talk. Whether
-          you have questions, partnership ideas, or simply want to see a demo,
-          we’re here to help.
-        </p>
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Submit</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <p>&copy; 2024 CubeSat VR Program. All rights reserved.</p>
-    </footer>
-
-    <!-- External JS -->
-    <script src="script.js"></script>
+    </div>
   </body>
 </html>
+
 
 
 
