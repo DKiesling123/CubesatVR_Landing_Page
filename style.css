@@ -7,14 +7,12 @@ body {
   font-family: "Inter UI", sans-serif;
   text-align: center;
   color: white;
-  background-color: #000; /* fallback background if needed */
 }
 
-/* Background & Star Animation */
 .titan-background {
   position: absolute;
   width: 100%;
-  background-image: linear-gradient(-180deg, #000000 0%, #200835 100%);
+  background-image: linear-gradient(-180deg, #000000 0%, #000835 100%);
   overflow: hidden;
   z-index: 1;
   top: -10%;
@@ -28,26 +26,27 @@ body {
   top: 0;
   width: 300vw;
   height: 100vh;
+  transform: translate(0%, 0%);
   background-size: contain;
   background-repeat: repeat;
   transform-origin: top left;
 }
 
 .stars-L {
-  background-image: url("assets/stars-L.svg"); /* Update path to your large stars asset */
+  background-image: url("assets/stars-L.svg");
   background-size: 890px;
   height: 750px;
   animation: panning-stars 200s linear infinite alternate;
 }
 
 .stars-M {
-  background-image: url("assets/stars-M.svg"); /* Update path to your medium stars asset */
+  background-image: url("assets/stars-M.svg");
   height: 530px;
   animation: panning-stars 300s linear infinite alternate;
 }
 
 .stars-S {
-  background-image: url("assets/stars-S.svg"); /* Update path to your small stars asset */
+  background-image: url("assets/stars-S.svg");
   height: 370px;
   animation: panning-stars 400s linear infinite alternate;
 }
@@ -61,25 +60,19 @@ body {
   }
 }
 
-/* Main Container */
-.container {
+.marvellous-container {
   position: relative;
   z-index: 2;
   padding: 104px 0 24px 0;
   width: 95%;
-  max-width: 600px;
+  max-width: 1200px;
   margin: auto;
 }
 
-/* Header */
-.header {
-  margin-bottom: 48px;
-}
-
 h1 {
-  font-size: 48px;
+  display: block;
+  font-size: 80px;
   margin: 0 0 24px 0;
-  color: blue; /* Make the title text blue */
 }
 
 @media (max-width: 500px) {
@@ -88,28 +81,57 @@ h1 {
   }
 }
 
-/* Video Placeholder */
-.video-placeholder {
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #4a90e2;
+  margin-top: 48px;
+}
+
+.title-main {
+  font-weight: bolder;
+  color: #4a90e2;
+  letter-spacing: -6.7px;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
+
+.title-vr {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #4a90e2;
+  letter-spacing: -4.5px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  border-color: #4a90e2;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+  line-height: 1;
+}
+
+.video-container {
+  margin: 60px auto;
   width: 100%;
-  height: 300px;
-  background: #000;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-  margin: 40px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 800px;
 }
 
-.video-placeholder p {
-  color: #fff;
-  opacity: 0.8;
-  font-size: 18px;
+.video-placeholder {
+  background: #000000;
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
 }
 
-/* Purpose / Description */
-.purpose {
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 300;
+.purpose-section {
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+.purpose-section p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
